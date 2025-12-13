@@ -1,0 +1,99 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        :root{
+            --bg-accent-1: rgba(186, 104, 200, 0.12);
+            --bg-accent-2: rgba(100, 181, 246, 0.10);
+            --bg-base-1: #f0f8ff;
+            --bg-base-2: #fff0f9;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            background-image: radial-gradient(circle at 12% 18%, var(--bg-accent-1) 0%, rgba(0,0,0,0) 28%), radial-gradient(circle at 84% 82%, var(--bg-accent-2) 0%, rgba(0,0,0,0) 28%), linear-gradient(135deg, var(--bg-base-1) 0%, var(--bg-base-2) 100%);
+            background-size: 170% 170%, 130% 130%, cover;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            animation: bgShift 28s linear infinite;
+        }
+
+        @media (prefers-reduced-motion: reduce){
+            body{ animation:none; }
+        }
+
+        .container {
+            background: rgba(255,255,255,0.85);
+            width: 360px;
+            padding: 25px;
+            border-radius: 14px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            border: 1px solid rgba(255,255,255,0.6);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 18px;
+            font-weight: 700;
+            color: #222;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 7px 0 16px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #222;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            background: #444;
+        }
+
+        .link-btn {
+            margin-top: 14px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .link-btn a {
+            color: #222;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .error {
+            color: red;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+    
